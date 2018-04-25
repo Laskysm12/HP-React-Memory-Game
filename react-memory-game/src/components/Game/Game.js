@@ -1,5 +1,6 @@
-// Holds all the guts/functions
+// Game.js holds the "guts" of the application
 
+// Importing all of the various components of the game
 import React, { Component } from "react";
 import Nav from "../Nav";
 import Header from "../Header";
@@ -8,10 +9,11 @@ import ClickItem from "../ClickItem";
 import Footer from "../Footer";
 import data from "../../data.json";
 
-// All my logic goes inside here
+// All of my game logic is below
 class Game extends Component {
     state = {
       data,
+      // Setting the scores to start at 0
       score: 0,
       topScore: 0
     };
@@ -20,6 +22,7 @@ class Game extends Component {
       this.setState({ data: this.shuffleData(this.state.data) });
     }
   
+    // Logic for correct guesses
     handleCorrectGuess = newData => {
       const { topScore, score } = this.state;
       const newScore = score + 1;
@@ -30,7 +33,8 @@ class Game extends Component {
         topScore: newTopScore
       });
     };
-  
+
+    // Logic for incorrect guesses  
     handleIncorrectGuess = data => {
       this.setState({
         data: this.resetData(data),
@@ -38,6 +42,7 @@ class Game extends Component {
       });
     };
   
+    // Logic for resetting the game
     resetData = data => {
       const resetData = data.map(item => ({ ...item, clicked: false }));
       return this.shuffleData(resetData);

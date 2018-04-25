@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./NavMessage.css";
 
-// NavMessage renders an li tag containing an message for the user
+// Logic for the nav message shown to the user below
 
 class NavMessage extends Component {
   state = {

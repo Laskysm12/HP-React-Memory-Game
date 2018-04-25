@@ -1,3 +1,4 @@
+/* Gryffindor colors for the nav bar */
 .navbar {
     background: maroon;
     min-height: 70px;
@@ -28,6 +29,7 @@
     font-weight: 900 bold;
   }
   
+  /* Media queries for responsive web design */
   @media (max-width: 420px) {
     .navbar li:first-child {
       width: 25%;
