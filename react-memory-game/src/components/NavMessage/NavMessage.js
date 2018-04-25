@@ -30,7 +30,7 @@ class NavMessage extends Component {
     case "incorrect":
       return "You guessed incorrectly!";
     default:
-      return "Click an image to begin!";
+      return "Click on an image to start the game!";
     }
   };
 
