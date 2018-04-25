@@ -2,15 +2,15 @@
     background-color: black;
     background-image: url("/assets/images/geometry.svg");
     background-repeat: repeat;
-    color: white;
+    color: goldenrod;
     min-height: 400px;
-    padding: 160px 20px; 
-    padding-bottom: 80px;
+    padding: 120px 20px; 
+    padding-bottom: 10px;
     text-align: center;
   }
   
   .header h1 {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 4rem;
   }

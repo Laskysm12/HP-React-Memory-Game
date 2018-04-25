@@ -1,10 +1,10 @@
 .navbar {
-    background: grey;
+    background: maroon;
     min-height: 70px;
     position: fixed;
     width: 100%;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    color: white;
+    color: goldenrod;
     font-size: calc(10px + (24 - 10) * (100vw - 320px) / (1200 - 400));
     z-index: 99;
     white-space: nowrap;
@@ -24,8 +24,8 @@
   
   .navbar a {
     text-decoration: none;
-    color: white;
-    font-weight: 900;
+    color: goldenrod;
+    font-weight: 900 bold;
   }
   
   @media (max-width: 420px) {

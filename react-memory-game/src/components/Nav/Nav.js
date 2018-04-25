@@ -8,11 +8,11 @@ const Nav = props => (
   <nav className="navbar">
     <ul>
       <li className="brand">
-        <a href="/">Memory Game!</a>
+        <a href="/">HP Memory Game!</a>
       </li>
       <NavMessage score={props.score} topScore={props.topScore} />
       <li>
-        Score: {props.score} | Top Score: {props.topScore}
+        Score: {props.score} | High Score: {props.topScore}
       </li>
     </ul>
   </nav>
